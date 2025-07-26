@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Utpal's Portfolio</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+    <!-- AOS CSS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  </head>
+  
+
+  <body class="bg-gray-100 text-gray-800">
+    <!-- Navbar -->
+<header class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+    <div class="text-xl font-bold text-blue-700">Utpal Singh</div>
+    <div class="hidden md:flex space-x-6">
+      <a href="#home" class="text-gray-700 hover:text-blue-600">Home</a>
+      <a href="#about" class="text-gray-700 hover:text-blue-600">About</a>
+      <a href="#projects" class="text-gray-700 hover:text-blue-600">Projects</a>
+      <a href="#contact" class="text-gray-700 hover:text-blue-600">Contact</a>
+    </div>
+    <div class="md:hidden">
+      <button id="menu-btn" class="focus:outline-none">
+        <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div id="mobile-menu" class="md:hidden hidden bg-white px-4 pt-2 pb-4 space-y-2">
+  <a href="#home" class="block text-gray-700 hover:text-blue-600">Home</a>
+  <a href="#about" class="block text-gray-700 hover:text-blue-600">About</a>
+  <a href="#projects" class="block text-gray-700 hover:text-blue-600">Projects</a>
+  <a href="#contact" class="block text-gray-700 hover:text-blue-600">Contact</a>
+</div>
+
+
+</header>
+
+<main class="pt-20">
+  <!-- Hero Section -->
+<section id="home" class="pt-16 min-h-screen bg-gradient-to-r from-blue-50 via-purple-50 to-pink-50 flex flex-col items-center justify-center text-center px-6">
+  <div class="mt-8">
+    <img src="public/profile.jpg.jpg" alt="Utpal Singh" class="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover object-top shadow-lg border-4 border-white" />
+  </div>
+  <h1 class="text-4xl md:text-6xl font-extrabold text-gray-800 mb-4">
+    Hello, I'm <span class="text-blue-600">Utpal Singh</span>
+  </h1>
+  <p class="text-lg md:text-xl text-gray-600 mb-6 max-w-xl">
+    I'm a passionate <span class="font-medium text-blue-500">Full Stack Java Developer</span> crafting clean & scalable web applications.
+  </p>
+  <a href="#projects" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-full shadow-md transition duration-300">
+    View My Projects
+  </a>
+</section>
+
+  <section id="about" class="py-16 px-6 text-center bg-white" data-aos="fade-up">
+  <h2 class="text-3xl font-bold text-gray-800 mb-4">About Me</h2>
+  <p class="text-gray-600 max-w-2xl mx-auto">
+    Hey! I'm <span class="font-semibold text-indigo-600">Utpal Singh</span>, a passionate 
+    <span class="font-semibold text-indigo-600">Java Full Stack Developer</span> who loves building dynamic web applications 🌐. 
+    Currently focused on mastering Spring Framework and React.js. I enjoy solving real-world problems through clean and scalable code.
+  </p>
+</section>
+
+<section id="projects" class="py-16 bg-gray-100 text-gray-800 px-6" data-aos="zoom-in" data-aos-duration="800">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-3xl font-bold text-blue-700 mb-10">Projects</h2>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Project 1 -->
+      <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition transform hover:-translate-y-1 duration-300" data-aos="fade-up">
+        <h3 class="text-xl font-semibold mb-3">Employee Manager (Spring MVC)</h3>
+        <p class="text-sm text-gray-600 mb-4">
+          A web app to manage employee data, built with Java, Spring MVC, MySQL.
+        </p>
+        <a href="#" class="text-blue-600 hover:underline text-sm transition">View Project</a>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition transform hover:-translate-y-1 duration-300" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="text-xl font-semibold mb-3">To-Do App (React + Tailwind)</h3>
+        <p class="text-sm text-gray-600 mb-4">
+          Simple to-do application using React for UI and Tailwind for styling.
+        </p>
+        <a href="#" class="text-blue-600 hover:underline text-sm transition">View Project</a>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition transform hover:-translate-y-1 duration-300" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="text-xl font-semibold mb-3">Portfolio Website</h3>
+        <p class="text-sm text-gray-600 mb-4">
+          This very site — built using HTML, Tailwind CSS, and JavaScript.
+        </p>
+        <a href="#" class="text-blue-600 hover:underline text-sm transition">View Project</a>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition transform hover:-translate-y-1 duration-300" data-aos="fade-up" data-aos-delay="300">
+        <h3 class="text-xl font-semibold mb-3">E-commerce Website</h3>
+        <p class="text-sm text-gray-600 mb-4">
+          A full-featured e-commerce platform with product browsing, shopping cart, and payment integration. Built using Java Spring Boot, React, and MySQL.
+        </p>
+        <a href="#" class="text-blue-600 hover:underline text-sm transition">View Project</a>
+      </div>
+
+      <!-- DSA Java Project -->
+      <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition transform hover:-translate-y-1 duration-300" data-aos="fade-up" data-aos-delay="400">
+        <h3 class="text-xl font-semibold mb-3">DSA Java Implementations</h3>
+        <p class="text-sm text-gray-600 mb-4">
+          Implementations of common data structures and algorithms using Java.
+        </p>
+        <a href="#" class="text-blue-600 hover:underline text-sm transition">View Project</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Education Section -->
+<section id="education" class="py-16 bg-white text-gray-800 px-6">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-bold text-blue-700 mb-10">Education</h2>
+    <div class="bg-gray-100 p-6 rounded-2xl shadow-md">
+      <h3 class="text-xl font-semibold">B.Tech in Computer Science & Engineering</h3>
+      <p class="text-sm text-gray-600 mt-2">IILM College of Engineering and Technology</p>
+      <p class="text-sm text-gray-600">2021 – 2025 (Final Year)</p>
+      <p class="text-sm text-gray-600 mt-2">
+        Gained expertise in core computer science subjects including Data Structures, Algorithms, Operating Systems, DBMS, Computer Networks, Web Development, Java Full Stack, and Software Engineering.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-16 px-6 bg-white text-gray-800" data-aos="zoom-in" data-aos-duration="800">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-bold text-blue-700 mb-10">Contact Me</h2>
+    
+    <p class="mb-6 text-gray-600">Have a project in mind, want to collaborate, or just want to say hello?</p>
+    
+    <div class="flex flex-col space-y-4 text-left max-w-md mx-auto">
+      <p><strong>Email:</strong> <a href="mailto:utpalsingh2002@gmail.com" class="text-blue-600 hover:underline">utpalsingh2002@gmail.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+919525446612" class="text-blue-600 hover:underline">+91 9525446612</a></p>
+      <p><strong>Location:</strong> Noida</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-6 px-4 mt-10 text-center" data-aos="zoom-in" data-aos-duration="800">
+  <p class="text-sm">&copy; 2025 Utpal Singh. All rights reserved.</p>
+
+  <div class="flex justify-center items-center space-x-6 mt-4">
+    <!-- GitHub -->
+    <a href="https://github.com/utpal-kumar-singh" target="_blank" class="hover:text-blue-400 transition flex items-center space-x-1">
+      <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.29 3.438 9.787 8.205 11.387.6.111.82-.261.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.388-1.333-1.758-1.333-1.758-1.09-.745.083-.73.083-.73 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.42-1.305.763-1.605-2.665-.302-5.467-1.333-5.467-5.93 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.521.117-3.168 0 0 1.008-.322 3.301 1.23a11.47 11.47 0 0 1 3.004-.403c1.02.005 2.047.137 3.004.403 2.291-1.552 3.297-1.23 3.297-1.23.654 1.647.243 2.865.12 3.168.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.431.371.815 1.102.815 2.222v3.293c0 .319.216.694.825.576C20.565 22.285 24 17.79 24 12.5 24 5.87 18.627.5 12 .5z"/></svg>
+      <span>GitHub</span>
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/utpal-singh-b71a79330" target="_blank" class="hover:text-blue-400 transition flex items-center space-x-1">
+      <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.804-1.75-1.732s.784-1.732 1.75-1.732 1.75.804 1.75 1.732-.784 1.732-1.75 1.732zm13.5 11.268h-3v-5.604c0-3.367-4-3.117-4 0v5.604h-3v-10h3v1.457c1.396-2.586 7-2.777 7 2.476v6.067z"/></svg>
+      <span>LinkedIn</span>
+    </a>
+
+    <!-- Email (Optional) -->
+    <a href="mailto:utpalsingh2002@gmail.com" class="hover:text-blue-400 transition flex items-center space-x-1">
+      <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      <span>Email</span>
+    </a>
+  </div>
+
+  <!-- Resume download link (Update href later) -->
+    <a href="#" 
+       download 
+       class="hover:text-blue-400 transition duration-300 ease-in-out">Resume</a>
+
+  <!-- Scroll to Top Button -->
+  <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="mt-6 text-sm text-blue-300 hover:text-white transition">
+    ⬆️ Back to Top
+  </button>
+</footer>
+
+<!-- Your HTML content -->
+
+<script>
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
+</body>
+
+
+</body>
+
+
+
+</body>
+
+</html>
