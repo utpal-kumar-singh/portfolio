@@ -8,7 +8,11 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-!dist/
+# Ignore the entire dist folder
+dist/
+
+# But include the output.css file inside dist
+!dist/output.css
 
 dist-ssr
 *.local
