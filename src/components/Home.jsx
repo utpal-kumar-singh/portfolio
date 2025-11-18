@@ -1,16 +1,33 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 export default function Home() {
+  // Detect mobile screen to switch background
+  const [bgImage, setBgImage] = useState("/home_page_backgroundImage.jpeg");
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setBgImage("/home_mobile_backgroundImage.jpeg"); // your mobile image
+      } else {
+        setBgImage("/home_page_backgroundImage.jpeg"); // your desktop image
+      }
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <section
       className="fade-animation bg-cover bg-center rounded-xl relative overflow-hidden"
-      style={{ backgroundImage: "url('/public/pexels-cottonbro-5483077.jpg')" }}
+      style={{ backgroundImage: `url('${bgImage}')` }}
     >
       <div className="bg-black/50 p-12 rounded-xl flex flex-col items-center justify-center">
-        
+
         {/* Profile Image */}
         <img
-          src="/public/profile.jpg.jpg"
+          src="/profile.jpg.jpg"
           alt="profile"
           className="w-36 h-36 rounded-full object-cover border-4 border-white shadow-lg mb-6"
         />
@@ -50,7 +67,7 @@ export default function Home() {
           </a>
 
           <a
-            href="/public/utpal_resume-1.pdf"
+            href="/utpal_resume-1.pdf"
             download
             className="text-white/90 underline px-4 py-2"
           >

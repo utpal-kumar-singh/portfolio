@@ -12,6 +12,13 @@ const LinkedInIcon = ({ className = "w-5 h-5" }) => (
   </svg>
 );
 
+/* NEW EMAIL ICON */
+const EmailIcon = ({ className = "w-5 h-5" }) => (
+  <svg className={className} fill="currentColor" viewBox="0 0 24 24">
+    <path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+  </svg>
+);
+
 export default function Footer() {
   return (
     <footer className="fixed left-0 right-0 bottom-6 mx-auto max-w-6xl px-6">
@@ -22,15 +29,31 @@ export default function Footer() {
         </div>
         
         <div className="flex items-center gap-4">
+
+          {/* GitHub */}
           <a href="https://github.com/utpal-kumar-singh" target="_blank" rel="noreferrer" className="hover:text-blue-400 transition">
             <GitHubIcon />
           </a>
+
+          {/* LinkedIn */}
           <a href="https://www.linkedin.com/in/utpal-singh-b71a79330/" target="_blank" rel="noreferrer" className="hover:text-blue-400 transition">
             <LinkedInIcon />
           </a>
-          <a href="/public/utpal_resume-1.pdf" download className="text-blue-300 hover:text-white text-sm ml-4 transition">
+
+          {/* EMAIL (Added) */}
+          <a href="mailto:utpalsingh2002@gmail.com" className="hover:text-blue-400 transition">
+            <EmailIcon />
+          </a>
+
+          {/* Resume */}
+          <a
+            href="/public/utpal_resume-1.pdf"
+            download
+            className="text-blue-300 hover:text-white text-sm ml-4 transition"
+          >
             Resume
           </a>
+
         </div>
         
       </div>
